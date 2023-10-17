@@ -5,6 +5,12 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   name: 'cdk-eb-pipes-kinesis',
   projenrcTs: true,
 
+  deps: [
+    '@aws-sdk/client-kinesis'
+  ],
+  devDeps: [
+    '@aws-cdk/aws-glue-alpha'
+  ],
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
